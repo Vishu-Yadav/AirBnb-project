@@ -1,0 +1,1 @@
+select * from {{ source('staging', 'bookings') }}       {# it is a variable that is why we use double curly braces #}
