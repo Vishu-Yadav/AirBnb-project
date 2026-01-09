@@ -29,6 +29,7 @@ select * from {{ref('bookings_bronze')}}
     where NIGHTS_BOOKED <= 3
 {% endif %}
 
+{# Note - for if-else we use {% %}, not like this –> {{% %}} –> these double curly braces are used for variables and here it will cause error #}
 
 
 {# 4) Loop #}
