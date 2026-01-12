@@ -48,3 +48,19 @@ Runtime Error
 [0m11:14:21.070383 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10437a0e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1053ed270>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105478790>]}
 [0m11:14:21.070596 [debug] [MainThread]: Flushing usage events
 [0m11:14:22.555445 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:28:28.220599 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10812e0b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109228880>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109228f40>]}
+
+
+============================== 13:28:28.225642 | 325f4c14-17ef-43df-87c1-42b05fd6eda9 ==============================
+[0m13:28:28.225642 [info ] [MainThread]: Running with dbt=1.11.2
+[0m13:28:28.226031 [debug] [MainThread]: running dbt with arguments {'empty': 'False', 'partial_parse': 'True', 'quiet': 'False', 'invocation_command': 'dbt compile', 'printer_width': '80', 'introspect': 'True', 'warn_error': 'None', 'profiles_dir': '/Users/vishuyadav/.dbt', 'use_experimental_parser': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_format': 'default', 'no_print': 'None', 'write_json': 'True', 'use_colors': 'True', 'cache_selected_only': 'False', 'log_cache_events': 'False', 'version_check': 'True', 'log_path': 'logs', 'static_parser': 'True', 'target_path': 'None', 'debug': 'False', 'fail_fast': 'False', 'send_anonymous_usage_stats': 'True', 'indirect_selection': 'eager'}
+[0m13:28:28.226520 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /Users/vishuyadav/Desktop/Telegram/AirBnb project/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m13:28:28.230362 [debug] [MainThread]: Resource report: {"command_name": "compile", "command_success": false, "command_wall_clock_time": 0.073796205, "process_in_blocks": "0", "process_kernel_time": 0.214921, "process_mem_max_rss": "91439104", "process_out_blocks": "0", "process_user_time": 0.802756}
+[0m13:28:28.230749 [debug] [MainThread]: Command `dbt compile` failed at 13:28:28.230672 after 0.07 seconds
+[0m13:28:28.230983 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10812e0b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1091d8a60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109228f70>]}
+[0m13:28:28.231205 [debug] [MainThread]: Flushing usage events
+[0m13:28:29.459443 [debug] [MainThread]: An error was encountered while trying to flush usage events
