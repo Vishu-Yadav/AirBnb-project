@@ -10,7 +10,7 @@ show file formats;
 
 CREATE OR REPLACE STAGE snowstage
 FILE_FORMAT = csv_format
-URL='s3://test-vishu-vlcc';
+URL='';
 
 show stages;
 
